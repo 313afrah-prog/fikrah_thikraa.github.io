@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0f766e">
+<meta name="description" content="رفيق دربي — أذكار وقرآن وأدعية ورقية شرعية">
+<link rel="manifest" href="manifest.json">
+<title>رفيق دربي | My Companion</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brand-icon">☾</span><div><strong data-i18n="brand">رفيق دربي</strong><small data-i18n="tagline">رفيقك إلى الطمأنينة</small></div></div>
+  <div class="actions">
+    <button id="langBtn" class="ghost">English</button>
+    <button id="themeBtn" class="icon-btn" aria-label="تبديل الوضع">☼</button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-content">
+    <span class="pill" data-i18n="welcome">أهلًا بك</span>
+    <h1 data-i18n="heroTitle">رفيق دربي</h1>
+    <p data-i18n="heroText">مساحة هادئة للذكر، والقرآن، والدعاء، والرقية الشرعية.</p>
+    <div class="search-wrap"><span>⌕</span><input id="search" data-i18n-placeholder="search" placeholder="ابحث في الأقسام..." /></div>
+  </div>
+  <div class="hero-orbit">☾<span>✦</span>✧</div>
+</section>
+
+<section class="daily-card">
+  <div><span class="eyebrow" data-i18n="today">ورد اليوم</span><h2 data-i18n="dailyTitle">ألا بذكر الله تطمئن القلوب</h2><p data-i18n="dailyText">خذ لحظة هادئة، وابدأ يومك بذكر الله.</p></div>
+  <button class="primary" onclick="showToast(t('soon'))" data-i18n="start">ابدأ وردك</button>
+</section>
+
+<section>
+  <div class="section-head"><div><span class="eyebrow" data-i18n="explore">استكشف</span><h2 data-i18n="sections">أقسام رفيق دربي</h2></div></div>
+  <div id="cards" class="grid"></div>
+</section>
+
+<section class="quote">
+  <div class="quote-mark">“</div>
+  <p data-i18n="quote">«فاذكروني أذكركم واشكروا لي ولا تكفرون»</p>
+  <small>سورة البقرة — 152</small>
+</section>
+</main>
+
+<footer><span>© <span id="year"></span> رفيق دربي</span><span data-i18n="footer">نسخة أولى مجانية — قابلة للتطوير</span></footer>
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

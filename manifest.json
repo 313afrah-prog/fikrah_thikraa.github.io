@@ -1,0 +1,11 @@
+{
+  "name":"رفيق دربي | My Companion",
+  "short_name":"رفيق دربي",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#f7faf8",
+  "theme_color":"#0f766e",
+  "lang":"ar",
+  "dir":"rtl",
+  "icons":[]
+}
